@@ -11,16 +11,16 @@
 
                 <div class = "col-12">
                     <label for="">Usuário:</label>
-                    <input class = "col-12" type="text" pInputText />
+                    <input [(ngModel)]="requestLogin.login" class = "col-12" type="text" pInputText />
                 </div>
 
                 <div class = "col-12">
                     <label for="">Senha:</label>
-                    <input class = "col-12" type="password" pInputText />
+                    <input [(ngModel)]="requestLogin.password" class = "col-12" type="password" pInputText />
                 </div>
        
                 <div class = "col-12">
-                    <button pButton type="button" label="Entrar" class = "col-12"></button>
+                    <button (click)="doLogin()" pButton type="button" label="Entrar" class = "col-12"></button>
                 </div>
             </div>
         </p-card>
